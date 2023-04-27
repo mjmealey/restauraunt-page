@@ -1,0 +1,101 @@
+ const contactPage = () => {
+    const contentContainer = document.getElementById("contentContainer");
+    const contact = document.getElementById("contact");
+    let formChoice = "";
+    contact.addEventListener("click", (e) => {
+      if (e.target.id === "contact") {
+        contact.style.backgroundColor = "contact";
+        const contactDiv = document.createElement("div");
+        contactDiv.setAttribute("id", "contactDiv");
+        contentContainer.appendChild(contactDiv);
+        const contactHeader = document.createElement("h2");
+        contactHeader.setAttribute("id", "contactHeader");
+        contactHeader.innerHTML = "Contact Us";
+        contactDiv.appendChild(contactHeader);
+        const contactForm = document.createElement("form");
+        contactForm.setAttribute("id", "contactForm");
+        contactDiv.appendChild(contactForm);
+        const contactDesc = document.createElement("p");
+        contactDesc.setAttribute("id", "contactDesc");
+        contactDesc.innerHTML =
+          "Would you like to leave a review or complaint?";
+        contactForm.appendChild(contactDesc);
+        const reviewLabel = document.createElement("label");
+        reviewLabel.innerHTML = "Review";
+        reviewLabel.setAttribute("for", "review");
+        reviewLabel.setAttribute("id", "reviewLabel");
+        contactForm.appendChild(reviewLabel);
+        const review = document.createElement("input");
+        review.setAttribute("id", "review");
+        review.setAttribute("type", "radio");
+        contactForm.appendChild(review);
+        const complaintLabel = document.createElement("label");
+        complaintLabel.innerHTML = "Complaint";
+        complaintLabel.setAttribute("for", "complaint");
+        complaintLabel.setAttribute("id", "complaintLabel");
+        contactForm.appendChild(complaintLabel);
+        const complaint = document.createElement("input");
+        complaint.setAttribute("id", "complaint");
+        complaint.setAttribute("type", "radio");
+        contactForm.appendChild(complaint);
+        const firstNameLabel = document.createElement("label");
+        firstNameLabel.setAttribute("id", "firstNameLabel");
+        firstNameLabel.setAttribute("for", "firstName");
+        firstNameLabel.innerHTML = "First Name:";
+        contactForm.appendChild(firstNameLabel);
+        const firstName = document.createElement("input");
+        firstName.setAttribute("id", "firstName");
+        firstName.setAttribute("pattern", "^[a-zA-Z]+$");
+        contactForm.appendChild(firstName);
+        const lastNameLabel = document.createElement("label");
+        lastNameLabel.setAttribute("for", "lastName");
+        lastNameLabel.setAttribute("id", "lastNameLabel");
+        lastNameLabel.innerHTML = "Last Name:";
+        contactForm.appendChild(lastNameLabel);
+        const lastName = document.createElement("input");
+        lastName.setAttribute("id", "lastName");
+        lastName.setAttribute("pattern", "^[a-zA-Z]+$");
+        contactForm.appendChild(lastName);
+        const phoneNumberLabel = document.createElement("label");
+        phoneNumberLabel.setAttribute("for", "phoneNumber");
+        phoneNumberLabel.setAttribute("id", "phoneNumberLabel");
+        phoneNumberLabel.innerHTML = "Phone Number:";
+        contactForm.appendChild(phoneNumberLabel);
+        const phoneNumber = document.createElement("input");
+        phoneNumber.setAttribute("id", "phoneNumber");
+        phoneNumber.setAttribute("pattern", "^(?d{3})?[-.s]?d{3}[-.s]?d{4}$");
+        phoneNumber.setAttribute("placeholder", "(123)-321-3421");
+        contactForm.appendChild(phoneNumber);
+        const emailAddressLabel = document.createElement("label");
+        emailAddressLabel.setAttribute("id", "emailAddressLabel");
+        emailAddressLabel.setAttribute("for", "emailAddress");
+        emailAddressLabel.innerHTML = "Email Address:";
+        contactForm.appendChild(emailAddressLabel);
+        const emailAddress = document.createElement("input");
+        emailAddress.setAttribute("id", "emailAddress");
+        emailAddress.setAttribute(
+          "pattern",
+          "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$"
+        );
+        emailAddress.setAttribute("placeholder", "example@gmail.com");
+        contactForm.appendChild(emailAddress);
+        const additionalInformationLabel = document.createElement("label");
+        additionalInformationLabel.setAttribute(
+          "id",
+          "additionalInformationLabel"
+        );
+        additionalInformationLabel.innerHTML =
+          "Additional information (optional):";
+        contactForm.appendChild(additionalInformationLabel);
+        const additionalInformation = document.createElement("textarea");
+        additionalInformation.setAttribute("id", "additionalInformation");
+        additionalInformation.setAttribute("maxLength", "500");
+        contactForm.appendChild(additionalInformation);
+        const submitContactFormButton = document.createElement("button");
+        submitContactFormButton.setAttribute("type", "submit");
+        submitContactFormButton.setAttribute("id", "submitContactFormButton");
+        submitContactFormButton.innerHTML = "Submit";
+        contactForm.appendChild(submitContactFormButton);
+      }
+    });
+    
