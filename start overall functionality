@@ -1,0 +1,14 @@
+  let page = "";
+
+  document.addEventListener("click", (e) => {
+    if (e.target.id === "frontPage") {
+      page = "frontPage";
+    } else if (e.target.id === "menu") {
+      page = "menu";
+    } else if (e.target.id === "loyaltyProgram") {
+      page = "loyaltyProgram";
+    } else if (e.target.id === "contact") {
+      page = "contact";
+    }
+  });
+}
