@@ -1,0 +1,13 @@
+      reasonForComplaint.appendChild(reasonForComplaintOptionFive);
+
+        complaint.addEventListener("click", () => {
+          formChoice = "complaint";
+          contactForm.appendChild(reasonForComplaintContainer);
+        });
+
+        review.addEventListener("click", () => {
+          if (formChoice === "complaint") {
+            contactForm.removeChild(reasonForComplaintContainer);
+          }
+          formChoice = "review";
+        });
