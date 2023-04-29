@@ -1,4 +1,6 @@
-      reasonForComplaint.appendChild(reasonForComplaintOptionFive);
+   let formChoice = "";     
+
+ reasonForComplaint.appendChild(reasonForComplaintOptionFive);
 
         complaint.addEventListener("click", () => {
           formChoice = "complaint";
