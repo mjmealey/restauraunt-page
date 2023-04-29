@@ -1,0 +1,30 @@
+let currentPage = ""
+
+  document.addEventListener("click", (e) => {
+    if(e.target.id === "frontPage"){
+      frontPageDiv.removeAttribute("id", "frontPageDiv")
+      frontPageDiv.setAttribute("id", "frontPageDiv")
+      currentPage = "front"
+      console.log(currentPage)
+    }
+  
+    else if(e.target.id === "menu"){
+      contentContainer.removeChild(frontPageDiv)
+      newRestaurantFactory.menuPage()
+      currentPage = "menu"
+      console.log(currentPage)
+    }
+
+    else if(e.target.id === "loyaltyProgram"){
+      contentContainer.removeChild(frontPageDiv)
+      newRestaurantFactory.loyaltyProgram()
+      currentPage = "loyaltyProgram"
+      console.log(currentPage)
+    }
+    else if(e.target.id === "contact"){
+      contentContainer.removeChild(frontPageDiv)
+      newRestaurantFactory.contactPage()
+      currentPage = "contact"
+      console.log(currentPage)
+    }
+  })
