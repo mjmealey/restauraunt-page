@@ -1,0 +1,717 @@
+import loyaltyProgramPage from "./loyaltyProgramModule.js"
+import oateesOatsMainPage from "./oateesOatsMainModule.js"
+import contactPage from "./contactPageModule.js"
+import menuPage from "./menuModule.js"
+
+const newOateesOatsMainPage = oateesOatsMainPage()
+const newMenuPage = menuPage()
+const newLoyaltyProgramPage = loyaltyProgramPage()
+const newContactPage = contactPage()
+
+newOateesOatsMainPage.oateesOatsMainContent()
+
+
+const menuPage = (() => {
+  const menuContent = () => {
+    const frontPageDiv = document.getElementById("frontPageDiv");
+    const menu = document.getElementById("menu");
+    const contentContainer = document.getElementById("contentContainer");
+    menu.style.backgroundColor = "bisque";
+    const menuDiv = document.createElement("div");
+    menuDiv.setAttribute("id", "menuDiv");
+    contentContainer.appendChild(menuDiv);
+    const menuHeader = document.createElement("h2");
+    menuHeader.innerHTML = "Menu";
+    menuHeader.setAttribute("id", "menuHeader");
+    menuHeader.classList.add("menuContent");
+    menuDiv.appendChild(menuHeader);
+    const imageOne = document.createElement("img");
+    imageOne.src = "oatmealDish.jpg";
+    imageOne.setAttribute("id", "imageOne");
+    menuDiv.appendChild(imageOne);
+    const oatmealHeader = document.createElement("h3");
+    oatmealHeader.setAttribute("id", "oatmealHeader");
+    oatmealHeader.innerHTML = "Oatmeal";
+    menuDiv.appendChild(oatmealHeader);
+    const oatmealDesc = document.createElement("p");
+    oatmealDesc.classList.add("menuContent");
+    oatmealDesc.setAttribute("id", "oatmealDesc");
+    oatmealDesc.innerHTML =
+      "Oatmeal is a classic dish in the world of oats. Our oatmeal comes in different sizes ranging from small to large. Toppings include a fruit of your choice, peanut butter, greek yogurt, and cottage cheese.";
+    menuDiv.appendChild(oatmealDesc);
+    const imageTwo = document.createElement("img");
+    imageTwo.src = "oatcake.jpg";
+    imageTwo.setAttribute("id", "imageTwo");
+    menuDiv.appendChild(imageTwo);
+    const oatcakeHeader = document.createElement("h3");
+    oatcakeHeader.setAttribute("id", "oatcakeHeader");
+    oatcakeHeader.innerHTML = "Oatcakes";
+    menuDiv.appendChild(oatcakeHeader);
+    const oatcakeDesc = document.createElement("p");
+    oatcakeDesc.setAttribute("id", "oatcakeDesc");
+    oatcakeDesc.innerHTML =
+      "Served as a side, oatcakes are a type of flatbread that originated in scotland. You have the option of having this dish in triangles or circles.  Toppings include butter, cheese, and jam.";
+    menuDiv.appendChild(oatcakeDesc);
+    const imageThree = document.createElement("img");
+    imageThree.src = "oatPanCakes.jpg";
+    imageThree.setAttribute("id", "imageThree");
+    menuDiv.appendChild(imageThree);
+    const oatPanCakesHeader = document.createElement("h3");
+    oatPanCakesHeader.setAttribute("id", "oatPanCakesHeader");
+    oatPanCakesHeader.innerHTML = "Oat Pancakes";
+    menuDiv.appendChild(oatPanCakesHeader);
+    const oatMealPanCakesDesc = document.createElement("p");
+    oatMealPanCakesDesc.setAttribute("id", "oatmealPanCakesDesc");
+    oatMealPanCakesDesc.innerHTML =
+      "A healthier take on a staple dish, oatmeal pancakes are pancakes mixed with oatmeal! Toppings include maple syrup, honey, whipped cream, and a fruit of your choice. ";
+    menuDiv.appendChild(oatMealPanCakesDesc);
+    const imageFour = document.createElement("img");
+    imageFour.src = "oatmealCookies.jpg";
+    imageFour.setAttribute("id", "imageFour");
+    menuDiv.appendChild(imageFour);
+    const oatmealCookiesHeader = document.createElement("h3");
+    oatmealCookiesHeader.setAttribute("id", "oatmealCookiesHeader");
+    oatmealCookiesHeader.innerHTML = "Oatmeal Cookies";
+    menuDiv.appendChild(oatmealCookiesHeader);
+    const oatmealCookiesDesc = document.createElement("p");
+    oatmealCookiesDesc.setAttribute("id", "oatmealCookiesDesc");
+    oatmealCookiesDesc.innerHTML =
+      "A healthier take on a classic pastry, oatmeal cookies are a chewy delight. We have a variety of oatmeal cookies including raisin, chocolate chip, and banana.";
+    menuDiv.appendChild(oatmealCookiesDesc);
+    const imageFive = document.createElement("img");
+    imageFive.src = "oatmealMuffins.jpg";
+    imageFive.setAttribute("id", "imageFive");
+    menuDiv.appendChild(imageFive);
+    const oatmealMuffinsHeader = document.createElement("h3");
+    oatmealMuffinsHeader.setAttribute("id", "oatmealMuffinsHeader");
+    oatmealMuffinsHeader.innerHTML = "Oatmeal Muffins";
+    menuDiv.appendChild(oatmealMuffinsHeader);
+    const oatmealMuffinsDesc = document.createElement("p");
+    oatmealMuffinsDesc.setAttribute("id", "oatmealMuffinsDesc");
+    oatmealMuffinsDesc.innerHTML =
+      "Served as a side dish, oatmeal muffins are breakfast muffins but with oats mixed in! We have a variety of oatmeal muffins including chocolate chip, nuts, and fruit. fruit.";
+    menuDiv.appendChild(oatmealMuffinsDesc);
+    return { menuContent };
+  };
+ 
+  return{menuContent}
+}) 
+
+export default menuPage;
+
+const loyaltyProgramPage = (() => {
+    const loyaltyProgramContent = () => {
+        const contentContainer = document.getElementById("contentContainer");
+        const loyaltyProgram = document.getElementById("loyaltyProgram");
+        const loyaltyProgramDiv = document.createElement("div")
+        loyaltyProgramDiv.setAttribute("id", "loyaltyProgramDiv");
+        contentContainer.appendChild(loyaltyProgramDiv);
+        const loyaltyProgramHeader = document.createElement("h2");
+        loyaltyProgramHeader.setAttribute("id", "loyaltyProgramHeader");
+        loyaltyProgramHeader.innerHTML = "What is the loyalty program?";
+        loyaltyProgramDiv.appendChild(loyaltyProgramHeader);
+        const loyaltyProgramDesc = document.createElement("p");
+        loyaltyProgramDesc.setAttribute("id", "loyaltyProgramDesc");
+        loyaltyProgramDesc.innerHTML =
+          "The Oatee's Oats Loyalty Program is a program that lets you start on a currency know as oat bucks. Oat bucks are given anytime you eat at Oatee's Oats and once you have 5 oat bucks you are eligible for a free meal. New customers who sign up for the loyalty program are eligible for a free meal! If you are interested in signing up, please look at the rules below prior to signing up.";
+        loyaltyProgramDiv.appendChild(loyaltyProgramDesc);
+        const loyaltyProgramHeaderTwo = document.createElement("h3");
+        loyaltyProgramHeaderTwo.setAttribute("id", "loyaltyProgramHeaderTwo");
+        loyaltyProgramHeaderTwo.innerHTML = "Rules";
+        loyaltyProgramDiv.appendChild(loyaltyProgramHeaderTwo);
+        const loyaltyProgramRules = document.createElement("ol");
+        loyaltyProgramRules.setAttribute("id", "loyaltyProgramRules");
+        loyaltyProgramDiv.appendChild(loyaltyProgramRules);
+        const loyaltyProgramRuleOne = document.createElement("li");
+        loyaltyProgramRuleOne.classList.add("loyaltyProgramRuleList");
+        loyaltyProgramRuleOne.setAttribute("id", "loyaltyProgramRuleOne");
+        loyaltyProgramRuleOne.innerHTML =
+          "Don't write down a fake name. IDs will be checked anytime you come into the restaurant to assure an oat buck can be issued to the correct person. Your name will be placed in the official record. However, if your ID is found to be fake you will be permanently banned from the loyalty program and you will receive a month long ban from eating at the restaurant. Also, if you refuse to show your ID, you will not be allowed to participate in the program. If you are caught falsifying names you will be banned from the program. (The IDs that will be accepted include a driver's license, state ID, and birth certificate.";
+        loyaltyProgramDiv.appendChild(loyaltyProgramRuleOne);
+        const loyaltyProgramRuleTwo = document.createElement("li");
+        loyaltyProgramRuleTwo.classList.add("loyaltyProgramRuleList");
+        loyaltyProgramRuleTwo.setAttribute("id", "loyaltyProgramRuleTwo");
+        loyaltyProgramRuleTwo.innerHTML =
+          "Oat bucks are not allowed to be copied. You are required to scan your oat bucks when you go to redeem them. If you lose your oat bucks you will not be recompensated. However, if due to a natural disaster, or a theft you will be given a pass. Please keep your oat bucks someplace secure at all times and if the scanner does not work, please alert a staff member. Your ID will be checked and if the scanner is proven to be out of order, you wil be compensated accordingly.";
+        loyaltyProgramDiv.appendChild(loyaltyProgramRuleTwo);
+        const loyaltyProgramRuleThree = document.createElement("li");
+        loyaltyProgramRuleThree.setAttribute("id", "loyaltyProgramRuleThree");
+        loyaltyProgramRuleThree.classList.add("loyaltyProgramRuleList");
+        loyaltyProgramRuleThree.innerHTML =
+          "No roughhousing in the restaurant. This includes physical fights, food fights, and verbally attacking customers and/or staff. If you are caught doing so or if you are a witness to the incident and neglect to inform staff within 5-10 minutes of the incident occuring, you will be banned from the program.";
+        loyaltyProgramDiv.appendChild(loyaltyProgramRuleThree);
+        const interested = document.createElement("p");
+        interested.setAttribute("id", "interested");
+        interested.innerHTML = "Interested? Click here!";
+        loyaltyProgramDiv.appendChild(interested);
+        contentContainer.removeChild(frontPageDiv)
+        const signUpButton = document.createElement("button");
+        signUpButton.setAttribute("id", "signUpButton");
+        signUpButton.innerHTML = "Sign Up";
+        loyaltyProgramDiv.appendChild(signUpButton);
+        const signUpButtonStart = document.getElementById("signUpButton");
+        signUpButtonStart.addEventListener("click", (e) => {
+          if (e.target.id === "signUpButton") {
+            if (confirm("If you click yes you will be directed to another page")) {
+              loyaltyProgramDiv.style.display = "none";
+              const loyaltyProgramForm = document.createElement("form");
+              loyaltyProgramForm.setAttribute("id", "loyaltyProgramForm");
+              contentContainer.appendChild(loyaltyProgramForm);
+              const loyaltyProgramFormHeader = document.createElement("h2");
+              loyaltyProgramFormHeader.setAttribute(
+                "id",
+                "loyaltyProgramFormHeader"
+              );
+              loyaltyProgramFormHeader.innerHTML = "Sign Up";
+              loyaltyProgramForm.appendChild(loyaltyProgramFormHeader);
+              const loyaltyProgramFirstNameLabel = document.createElement("label");
+              loyaltyProgramFirstNameLabel.setAttribute(
+                "for",
+                "loyaltyProgramFirstName"
+              );
+              loyaltyProgramFirstNameLabel.setAttribute(
+                "id",
+                "loyaltyProgramFirstNameLabel"
+              );
+              loyaltyProgramFirstNameLabel.innerHTML = "First Name:";
+              loyaltyProgramForm.appendChild(loyaltyProgramFirstNameLabel);
+              const loyaltyProgramFirstName = document.createElement("input");
+              loyaltyProgramFirstName.setAttribute("id", "loyaltyProgramFirstName");
+              loyaltyProgramFirstName.setAttribute("pattern", "^[a-zA-Z]+$");
+              loyaltyProgramForm.appendChild(loyaltyProgramFirstName);
+              const loyaltyProgramLastNameLabel = document.createElement("label");
+              loyaltyProgramLastNameLabel.setAttribute(
+                "for",
+                "loyaltyProgramLastName"
+              );
+              loyaltyProgramLastNameLabel.setAttribute(
+                "id",
+                "loyaltyProgramLastNameLabel"
+              );
+              loyaltyProgramLastNameLabel.innerHTML = "Last Name:";
+              loyaltyProgramForm.appendChild(loyaltyProgramLastNameLabel);
+              const loyaltyProgramLastName = document.createElement("input");
+              loyaltyProgramLastName.setAttribute("id", "loyaltyProgramLastName");
+              loyaltyProgramLastName.setAttribute("pattern", "^[a-zA-Z]+$");
+              loyaltyProgramForm.appendChild(loyaltyProgramLastName);
+              const loyaltyProgramPhoneNumberLabel =
+                document.createElement("label");
+              loyaltyProgramPhoneNumberLabel.setAttribute(
+                "for",
+                "loyaltyProgramPhoneNumber"
+              );
+              loyaltyProgramPhoneNumberLabel.setAttribute(
+                "id",
+                "loyaltyProgramPhoneNumberLabel"
+              );
+              loyaltyProgramForm.appendChild(loyaltyProgramPhoneNumberLabel);
+              loyaltyProgramPhoneNumberLabel.innerHTML = "Phone Number:";
+              const loyaltyProgramPhoneNumber = document.createElement("input");
+              loyaltyProgramPhoneNumber.setAttribute(
+                "pattern",
+                "^(?d{3})?[-.s]?d{3}[-.s]?d{4}$"
+              );
+              loyaltyProgramPhoneNumber.setAttribute(
+                "id",
+                "loyaltyProgramPhoneNumber"
+              );
+              loyaltyProgramPhoneNumber.setAttribute(
+                "placeholder",
+                "(123)-456-7891"
+              );
+              loyaltyProgramForm.appendChild(loyaltyProgramPhoneNumber);
+              const loyaltyProgramEmailLabel = document.createElement("label");
+              loyaltyProgramEmailLabel.innerHTML = "Email Address:";
+              loyaltyProgramEmailLabel.setAttribute(
+                "id",
+                "loyaltyProgramEmailLabel"
+              );
+              loyaltyProgramEmailLabel.setAttribute("for", "loyaltyProgramEmail");
+              loyaltyProgramForm.appendChild(loyaltyProgramEmailLabel);
+              const loyaltyProgramEmail = document.createElement("input");
+              loyaltyProgramEmail.setAttribute("id", "loyaltyProgramEmail");
+              loyaltyProgramEmail.setAttribute(
+                "pattern",
+                "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$"
+              );
+              loyaltyProgramEmail.setAttribute("placeholder", "example@gmail.com");
+              loyaltyProgramForm.appendChild(loyaltyProgramEmail);
+              const loyaltyProgramBirthDateLabel = document.createElement("label");
+              loyaltyProgramBirthDateLabel.setAttribute(
+                "for",
+                "loyaltyProgramBirthDate"
+              );
+              loyaltyProgramBirthDateLabel.setAttribute(
+                "id",
+                "loyaltyProgramBirthDateLabel"
+              );
+              loyaltyProgramBirthDateLabel.innerHTML = "Date of Birth:";
+              loyaltyProgramForm.appendChild(loyaltyProgramBirthDateLabel);
+              const loyaltyProgramBirthDate = document.createElement("input");
+              loyaltyProgramBirthDate.setAttribute("id", "loyaltyProgramBirthDate");
+              loyaltyProgramBirthDate.setAttribute("type", "date");
+              loyaltyProgramForm.appendChild(loyaltyProgramBirthDate);
+              const dietaryInterestsLabel = document.createElement("label");
+              dietaryInterestsLabel.setAttribute(
+                "for",
+                "loyaltyProgramDietaryInterestsLabel"
+              );
+              dietaryInterestsLabel.setAttribute("id", "dietaryInterestsLabel");
+              dietaryInterestsLabel.innerHTML = "What are your dietary interests?";
+              loyaltyProgramForm.appendChild(dietaryInterestsLabel);
+              const dietaryInterestList = document.createElement("select");
+              dietaryInterestList.setAttribute("id", "dietaryInterestList");
+              loyaltyProgramForm.appendChild(dietaryInterestList);
+              const dietaryInterestOptionOne = document.createElement("option");
+              dietaryInterestOptionOne.setAttribute(
+                "id",
+                "dietaryInterestOptionOne"
+              );
+              dietaryInterestOptionOne.innerHTML = "Select";
+              dietaryInterestOptionOne.classList.add("dietaryInterestOption");
+              dietaryInterestList.appendChild(dietaryInterestOptionOne);
+              const dietaryInterestOptionTwo = document.createElement("option");
+              dietaryInterestOptionTwo.setAttribute(
+                "id",
+                "dietaryInterestOptionTwo"
+              );
+              dietaryInterestOptionTwo.classList.add("dietaryInterestOptions");
+              dietaryInterestOptionTwo.innerHTML = "Vegan";
+              dietaryInterestList.appendChild(dietaryInterestOptionTwo);
+              const dietaryInterestOptionThree = document.createElement("option");
+              dietaryInterestOptionThree.setAttribute(
+                "id",
+                "dietaryInterestOptionThree"
+              );
+              dietaryInterestOptionThree.classList.add("dietaryInterestOptions");
+              dietaryInterestOptionThree.innerHTML = "Vegetarian";
+              dietaryInterestList.appendChild(dietaryInterestOptionThree);
+              const dietaryInterestOptionFour = document.createElement("option");
+              dietaryInterestOptionFour.setAttribute(
+                "id",
+                "dietaryInterestOptionFour"
+              );
+              dietaryInterestOptionFour.classList.add("dietaryInterestOptions");
+              dietaryInterestOptionFour.innerHTML = "Gluten-free";
+              dietaryInterestList.appendChild(dietaryInterestOptionFour);
+            }
+            const dietaryInterestOptionFive = document.createElement("option");
+            dietaryInterestOptionFive.classList.add("dietaryInterestOptions");
+            dietaryInterestOptionFive.setAttribute(
+              "id",
+              "dietaryInterestOptionFive"
+            );
+            dietaryInterestOptionFive.innerHTML = "Dairy-free";
+            dietaryInterestList.appendChild(dietaryInterestOptionFive);
+            const dietaryInterestOptionSix = document.createElement("option");
+            dietaryInterestOptionSix.classList.add("dietaryInterestOptions");
+            dietaryInterestOptionSix.setAttribute("id", "dietaryInterestOptionSix");
+            dietaryInterestOptionSix.innerHTML = "Nut-free";
+            dietaryInterestList.appendChild(dietaryInterestOptionSix);
+            const dietaryInterestOptionSeven = document.createElement("option");
+            dietaryInterestOptionSeven.classList.add("dietaryInterestOptions");
+            dietaryInterestOptionSeven.setAttribute(
+              "id",
+              "dietaryInterestOptionSeven"
+            );
+            dietaryInterestOptionSeven.innerHTML = "Low-sugar";
+            dietaryInterestList.appendChild(dietaryInterestOptionSeven);
+            const dietaryInterestOptionEight = document.createElement("option");
+            dietaryInterestOptionEight.classList.add("dietaryInterestOptions");
+            dietaryInterestOptionEight.setAttribute(
+              "id",
+              "dietaryInterestOptionEight"
+            );
+            dietaryInterestOptionEight.innerHTML = "High-Protein";
+            dietaryInterestList.appendChild(dietaryInterestOptionEight);
+            const dietaryInterestOptionNine = document.createElement("option");
+            dietaryInterestOptionNine.classList.add("dietaryInterestOptions");
+            dietaryInterestOptionNine.setAttribute(
+              "id",
+              "dietaryInterestOptionNine"
+            );
+            dietaryInterestOptionNine.innerHTML = "Paleo";
+            dietaryInterestList.appendChild(dietaryInterestOptionNine);
+            const dietaryInterestOptionTen = document.createElement("option");
+            dietaryInterestOptionTen.classList.add("dietaryInterestOptions");
+            dietaryInterestOptionTen.setAttribute("id", "dietaryInterestOptionTen");
+            dietaryInterestOptionTen.innerHTML = "Keto";
+            dietaryInterestList.appendChild(dietaryInterestOptionTen);
+            const dietaryInterestOptionEleven = document.createElement("option");
+            dietaryInterestOptionEleven.classList.add("dietaryListOptions");
+            dietaryInterestOptionEleven.setAttribute(
+              "id",
+              "dietaryInterestOptionEleven"
+            );
+            dietaryInterestOptionEleven.innerHTML = "Low-Carb";
+            dietaryInterestList.appendChild(dietaryInterestOptionEleven);
+            const dietaryInterestOptionTwelve = document.createElement("option");
+            dietaryInterestOptionTwelve.classList.add("dietaryInterestOptions");
+            dietaryInterestOptionTwelve.id = "dietaryInterestOptionTwelve";
+            dietaryInterestOptionTwelve.textContent = "Low-Fat";
+            dietaryInterestList.appendChild(dietaryInterestOptionTwelve);
+            const dietaryInterestOptionThirteen = document.createElement("option");
+            dietaryInterestOptionThirteen.id = "dietaryInterestOptionThirteen";
+            dietaryInterestOptionThirteen.classList.add("dietaryListOptions");
+            dietaryInterestOptionThirteen.textContent = "Whole Food";
+            dietaryInterestList.appendChild(dietaryInterestOptionThirteen);
+            const dietaryInterestOptionFourteen = document.createElement("option");
+            dietaryInterestOptionFourteen.id = "dietaryInterestOptionFourteen";
+            dietaryInterestOptionFourteen.classList.add("dietaryInterestOptions");
+            dietaryInterestOptionFourteen.textContent = "Plant-Based";
+            dietaryInterestList.appendChild(dietaryInterestOptionFourteen);
+            const visitingFrequencyLabel = document.createElement("label");
+            visitingFrequencyLabel.id = "visitingFrequencyLabel";
+            visitingFrequencyLabel.textContent = "Visiting Frequency:";
+            loyaltyProgramForm.appendChild(visitingFrequencyLabel);
+            const visitingFrequency = document.createElement("select");
+            visitingFrequency.id = "visitingFrequency";
+            loyaltyProgramForm.appendChild(visitingFrequency);
+            const visitingFrequencyOptionOne = document.createElement("option");
+            visitingFrequencyOptionOne.classList.add("visitingFrequencyOptions");
+            visitingFrequencyOptionOne.id = "visitingFrequencyOptionOne";
+            visitingFrequencyOptionOne.textContent = "Select";
+            visitingFrequency.appendChild(visitingFrequencyOptionOne);
+            const visitingFrequencyOptionTwo = document.createElement("option");
+            visitingFrequencyOptionTwo.classList.add("visitingFrequencyOptions");
+            visitingFrequencyOptionTwo.id = "vistingFrequencyOptionTwo";
+            visitingFrequencyOptionTwo.textContent = "Everyday";
+            visitingFrequency.appendChild(visitingFrequencyOptionTwo);
+            const visitingFrequencyOptionThree = document.createElement("option");
+            visitingFrequencyOptionThree.classList.add("visitingFrequencyOptions");
+            visitingFrequencyOptionThree.id = "visitingFrequencyOptionThree";
+            visitingFrequencyOptionThree.textContent = "Once a week";
+            visitingFrequency.appendChild(visitingFrequencyOptionThree);
+            const visitingFrequencyOptionFour = document.createElement("option");
+            visitingFrequencyOptionFour.classList.add("visitingFrequencyOptions");
+            visitingFrequencyOptionFour.textContent = "Once Every Two Weeks";
+            visitingFrequencyOptionFour.id = "visitingFrequencyOptionFour";
+            visitingFrequency.appendChild(visitingFrequencyOptionFour);
+            const visitingFrequencyOptionFive = document.createElement("option");
+            visitingFrequencyOptionFive.classList.add("visitingFrequencyOptions");
+            visitingFrequencyOptionFive.id = "visitingFrequencyOptionFive";
+            visitingFrequencyOptionFive.textContent = "Once Every Three Weeks";
+            visitingFrequency.appendChild(visitingFrequencyOptionFive);
+            const visitingFrequencyOptionSix = document.createElement("option");
+            visitingFrequencyOptionSix.classList.add("visitingFrequencyOptions");
+            visitingFrequencyOptionSix.id = "visitingFrequencyOptionSix";
+            visitingFrequencyOptionSix.textContent = "Once a month";
+            visitingFrequency.appendChild(visitingFrequencyOptionSix);
+            const visitingFrequencyOptionSeven = document.createElement("option");
+            visitingFrequencyOptionSeven.classList.add("visitingFrequencyOptions");
+            visitingFrequencyOptionSeven.id = "visitingFrequencyOptionSeven";
+            visitingFrequencyOptionSeven.textContent = "Other";
+            visitingFrequency.appendChild(visitingFrequencyOptionSeven);
+            const checkRules = document.createElement("input");
+            checkRules.type = "checkbox";
+            checkRules.id = "checkRules";
+            loyaltyProgramForm.appendChild(checkRules);
+            const checkRulesLabel = document.createElement("label");
+            checkRulesLabel.id = "checkRulesLabel";
+            checkRulesLabel.textContent =
+              "Do you agree with the rules listed in the previous page?";
+            loyaltyProgramForm.appendChild(checkRulesLabel);
+            const loyaltyProgramFormSubmit = document.createElement("button");
+            loyaltyProgramFormSubmit.type = "submit";
+            loyaltyProgramFormSubmit.id = "loyaltyProgramFormSubmit";
+            loyaltyProgramFormSubmit.textContent = "Submit";
+            loyaltyProgramForm.appendChild(loyaltyProgramFormSubmit);
+            return { loyaltyProgramContent}
+          }
+        });
+      };
+
+      return{loyaltyProgramContent}
+})
+
+export default loyaltyProgramPage
+
+
+const oateesOatsMainPage = (() => {
+    const oateesOatsMainContent = () => {
+        const menuDiv = document.getElementById("menuDiv")
+        const name = document.createElement("h1");
+        name.setAttribute("id", "name");
+        name.innerHTML = "Oatee's Oats";
+        headerContainer.appendChild(name);
+        const frontPage = document.createElement("button");
+        frontPage.classList.add("button");
+        frontPage.setAttribute("id", "frontPage");
+        frontPage.innerHTML = "Homepage";
+        sectionContainer.appendChild(frontPage);
+        const menu = document.createElement("button");
+        menu.classList.add("button");
+        menu.setAttribute("id", "menu");
+        menu.innerHTML = "Menu";
+        sectionContainer.appendChild(menu);
+        const loyaltyProgram = document.createElement("button");
+        loyaltyProgram.classList.add("button");
+        loyaltyProgram.setAttribute("id", "loyaltyProgram");
+        loyaltyProgram.innerHTML = "Learn About Our Loyalty Program!";
+        sectionContainer.appendChild(loyaltyProgram);
+        const contact = document.createElement("button");
+        contact.classList.add("button");
+        contact.setAttribute("id", "contact");
+        contact.innerHTML = "Contact Us";
+        sectionContainer.appendChild(contact);
+        const frontPageDiv = document.createElement("div");
+        frontPageDiv.id = "frontPageDiv";
+        contentContainer.appendChild(frontPageDiv);
+        const slogan = document.createElement("h2");
+        slogan.classList.add("headerContent");
+        slogan.setAttribute("id", "slogan");
+        slogan.innerHTML = "An Oat-standing Place to Start and End Your Day!";
+        frontPageDiv.appendChild(slogan);
+        const wonderful = document.createElement("p");
+        wonderful.classList.add("statement");
+        wonderful.setAttribute("id", "wonderful");
+        wonderful.innerHTML =
+          "Located in Farms of Oats, Wisconsin, Oatee's Oats takes an oat-h to providing customers with a glimpse into the vast world of oats! From dusk to dawn, our employees are determined to satisfy every customer with exceptional service and oat flavored goodies! Whether it is your first time trying oats or your millionth time we will prove there is always new possibilities for oats! Come check oat our menu!  ";
+        frontPageDiv.appendChild(wonderful);
+        const schedule = document.createElement("p");
+        schedule.setAttribute("id", "schedule");
+        schedule.innerHTML =
+          "We are open daily from 6am-12pm! Feel free to stop by!";
+        frontPageDiv.appendChild(schedule);
+        const firstTime = document.createElement("p");
+        firstTime.setAttribute("id", "firstTime");
+        firstTime.style.fontStyle = "italic";
+        firstTime.innerHTML =
+          "First time customers who sign up for the loyalty program get a free meal!";
+        frontPageDiv.appendChild(firstTime);
+    
+        
+        return { oateesOatsMainContent };
+      };
+
+      return {oateesOatsMainContent}
+    }
+)
+
+export default oateesOatsMainPage
+
+const contactPage = (() => {
+    const contactContent = () => {
+        const contentContainer = document.getElementById("contentContainer");
+        const contact = document.getElementById("contact");
+        let formChoice = "";
+        let complaintReason = "";
+        let restaurantNumber = 101 - 202 - 3034;
+        contact.style.backgroundColor = "contact";
+        const contactDiv = document.createElement("div");
+        contactDiv.setAttribute("id", "contactDiv");
+        contentContainer.appendChild(contactDiv);
+        const contactHeader = document.createElement("h2");
+        contactHeader.setAttribute("id", "contactHeader");
+        contactHeader.innerHTML = "Contact Us";
+        contactDiv.appendChild(contactHeader);
+        const contactForm = document.createElement("form");
+        contactForm.setAttribute("id", "contactForm");
+        contactDiv.appendChild(contactForm);
+        const contactDesc = document.createElement("p");
+        contactDesc.setAttribute("id", "contactDesc");
+        contactDesc.innerHTML = "Would you like to leave a review or complaint?";
+        contactForm.appendChild(contactDesc);
+        const reviewLabel = document.createElement("label");
+        reviewLabel.innerHTML = "Review";
+        reviewLabel.setAttribute("for", "review");
+        reviewLabel.setAttribute("id", "reviewLabel");
+        contactForm.appendChild(reviewLabel);
+        const review = document.createElement("input");
+        review.setAttribute("id", "review");
+        review.setAttribute("type", "radio");
+        review.name = "choice";
+        contactForm.appendChild(review);
+        const complaintLabel = document.createElement("label");
+        complaintLabel.innerHTML = "Complaint";
+        complaintLabel.setAttribute("for", "complaint");
+        complaintLabel.setAttribute("id", "complaintLabel");
+        contactForm.appendChild(complaintLabel);
+        const complaint = document.createElement("input");
+        complaint.setAttribute("id", "complaint");
+        complaint.setAttribute("type", "radio");
+        complaint.name = "choice";
+        contactForm.appendChild(complaint);
+        const firstNameLabel = document.createElement("label");
+        firstNameLabel.setAttribute("id", "firstNameLabel");
+        firstNameLabel.setAttribute("for", "firstName");
+        firstNameLabel.innerHTML = "First Name:";
+        contactForm.appendChild(firstNameLabel);
+        const firstName = document.createElement("input");
+        firstName.setAttribute("id", "firstName");
+        firstName.setAttribute("pattern", "^[a-zA-Z]+$");
+        contactForm.appendChild(firstName);
+        const lastNameLabel = document.createElement("label");
+        lastNameLabel.setAttribute("for", "lastName");
+        lastNameLabel.setAttribute("id", "lastNameLabel");
+        lastNameLabel.innerHTML = "Last Name:";
+        contactForm.appendChild(lastNameLabel);
+        const lastName = document.createElement("input");
+        lastName.setAttribute("id", "lastName");
+        lastName.setAttribute("pattern", "^[a-zA-Z]+$");
+        contactForm.appendChild(lastName);
+        const phoneNumberLabel = document.createElement("label");
+        phoneNumberLabel.setAttribute("for", "phoneNumber");
+        phoneNumberLabel.setAttribute("id", "phoneNumberLabel");
+        phoneNumberLabel.innerHTML = "Phone Number:";
+        contactForm.appendChild(phoneNumberLabel);
+        const phoneNumber = document.createElement("input");
+        phoneNumber.setAttribute("id", "phoneNumber");
+        phoneNumber.setAttribute("pattern", "^(?d{3})?[-.s]?d{3}[-.s]?d{4}$");
+        phoneNumber.setAttribute("placeholder", "(123)-321-3421");
+        contactForm.appendChild(phoneNumber);
+        const emailAddressLabel = document.createElement("label");
+        emailAddressLabel.setAttribute("id", "emailAddressLabel");
+        emailAddressLabel.setAttribute("for", "emailAddress");
+        emailAddressLabel.innerHTML = "Email Address:";
+        contactForm.appendChild(emailAddressLabel);
+        const emailAddress = document.createElement("input");
+        emailAddress.setAttribute("id", "emailAddress");
+        emailAddress.setAttribute(
+          "pattern",
+          "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$"
+        );
+        emailAddress.setAttribute("placeholder", "example@gmail.com");
+        contactForm.appendChild(emailAddress);
+        const additionalInformationLabel = document.createElement("label");
+        additionalInformationLabel.setAttribute("id", "additionalInformationLabel");
+        additionalInformationLabel.innerHTML = "Additional information (optional):";
+        contactForm.appendChild(additionalInformationLabel);
+        const additionalInformation = document.createElement("textarea");
+        additionalInformation.setAttribute("id", "additionalInformation");
+        additionalInformation.setAttribute("maxLength", "500");
+        contactForm.appendChild(additionalInformation);
+        const submitContactFormButton = document.createElement("button");
+        submitContactFormButton.setAttribute("type", "submit");
+        submitContactFormButton.setAttribute("id", "submitContactFormButton");
+        submitContactFormButton.innerHTML = "Submit";
+        contactForm.appendChild(submitContactFormButton);
+        const reasonForComplaintContainer = document.createElement("div");
+        reasonForComplaintContainer.id = "reasonForComplaintContainer";
+        const reasonForComplaintLabel = document.createElement("label");
+        reasonForComplaintLabel.id = "reasonForComplaintLabel";
+        reasonForComplaintLabel.textContent =
+          "What is your reason for complaining?";
+        reasonForComplaintContainer.appendChild(reasonForComplaintLabel);
+        const reasonForComplaint = document.createElement("select");
+        reasonForComplaint.id = "reasonForComplaint";
+        reasonForComplaintContainer.appendChild(reasonForComplaint);
+        const reasonForComplaintOptionOne = document.createElement("option");
+        reasonForComplaintOptionOne.classList.add("reasonForComplaintOptions");
+        reasonForComplaintOptionOne.id = "reasonForComplaintOptionOne";
+        reasonForComplaintOptionOne.textContent = "Select";
+        reasonForComplaint.appendChild(reasonForComplaintOptionOne);
+        const reasonForComplaintOptionTwo = document.createElement("option");
+        reasonForComplaintOptionTwo.classList.add("reasonForComplaintOptions");
+        reasonForComplaintOptionTwo.id = "reasonForComplaintOptionTwo";
+        reasonForComplaintOptionTwo.textContent = "Service was too slow";
+        reasonForComplaint.appendChild(reasonForComplaintOptionTwo);
+        const reasonForComplaintOptionThree = document.createElement("option");
+        reasonForComplaintOptionThree.classList.add("reasonForComplaintOptions");
+        reasonForComplaintOptionThree.id = "reasonForComplaintOptionThree";
+        reasonForComplaintOptionThree.textContent = "The food was not up to par";
+        reasonForComplaint.appendChild(reasonForComplaintOptionThree);
+        const reasonForComplaintOptionFour = document.createElement("option");
+        reasonForComplaintOptionFour.classList.add("reasonForComplaintOptions");
+        reasonForComplaintOptionFour.id = "reasonForComplaintOptionFour";
+        reasonForComplaintOptionFour.textContent = "Unfriendly staff";
+        reasonForComplaint.appendChild(reasonForComplaintOptionFour);
+        const reasonForComplaintOptionFive = document.createElement("option");
+        reasonForComplaintOptionFive.classList.add("reasonForComplaintOptions");
+        reasonForComplaintOptionFive.id = "reasonForComplaintOptionFive";
+        reasonForComplaintOptionFive.textContent = "Other";
+        reasonForComplaint.appendChild(reasonForComplaintOptionFive);
+        contentContainer.removeChild(frontPageDiv)
+    
+        complaint.addEventListener("click", () => {
+          formChoice = "complaint";
+          contactForm.appendChild(reasonForComplaintContainer);
+        });
+    
+        review.addEventListener("click", () => {
+          if (formChoice === "complaint") {
+            contactForm.removeChild(reasonForComplaintContainer);
+          }
+          formChoice = "review";
+        });
+    
+        contactForm.addEventListener("submit", (e) => {
+          if (e.target.id === "contactForm") {
+            e.preventDefault();
+            console.log(formChoice);
+            if (confirm("Are you sure you are ready to submit this form?")) {
+              if (formChoice === "review") {
+                const thankYouDiv = document.createElement("div");
+                thankYouDiv.id = "thankYouDiv";
+                contentContainer.appendChild(thankYouDiv);
+                contactForm.style.display = "none";
+                contactHeader.style.display = "none";
+                const thankYouHeader = document.createElement("h2");
+                thankYouHeader.id = "thankYouHeader";
+                thankYouHeader.textContent = "Thank You!";
+                thankYouDiv.appendChild(thankYouHeader);
+                const thankYouMessage = document.createElement("p");
+                thankYouMessage.id = "thankYouMessage";
+                thankYouMessage.textContent =
+                  "Your feedback is appreciated! We will use your feedback to improve our future services whether it be with you or fellow customers! Your feedback is what makes Oatee's Oats a safe and wonderful place for everyone to eat at. Once again, thank you for taking the time out of your day to leave a review. Have a great day!";
+                thankYouDiv.appendChild(thankYouMessage);
+                const backToHomepage = document.createElement("button");
+                backToHomepage.id = "backToHomePage";
+                backToHomepage.textContent = "Back to Homepage";
+                thankYouDiv.appendChild(backToHomepage);
+                const backToHomePage = document.getElementById("backToHomePage");
+                backToHomePage.addEventListener("click", (e) => {
+                  if (e.target.id === "backToHomePage") {
+                    console.log("hi");
+                    oateesOatsMain();
+                  }
+                });
+              } else if (formChoice === "complaint") {
+                const sorryDiv = document.createElement("div");
+                sorryDiv.id = "sorryDiv";
+                contentContainer.appendChild(sorryDiv);
+                contactForm.style.display = "none";
+                contactHeader.style.display = "none";
+                const sorryHeader = document.createElement("h2");
+                sorryHeader.textContent = "We Are Sorry";
+                sorryHeader.id = "sorryHeader";
+                sorryHeader.classList.add("sorryContent");
+                sorryDiv.appendChild(sorryHeader);
+                const sorryMessage = document.createElement("p");
+                sorryMessage.classList.add("sorryMessage");
+                sorryMessage.id = "sorryMessage";
+                if (reasonForComplaint.value === "Service was too slow") {
+                  sorryMessage.textContent =
+                    "We apologize for our service being too slow. We will work accordingly to provide better service in the future. Your feedback will pave the way to improve our restaurant. Thank you and have a great day!";
+                } else if (
+                  reasonForComplaint.value === "The food was not up to par"
+                ) {
+                  sorryMessage.textContent =
+                    "We apologize for the food not being up to par. We are dedicated to providing the best food possible so we are devastated to find that you did not find our food to be up to standards. We will do our due diligence to assure future visits are met with food of the utmost quality. Thank you for your feedback abd have a great day!";
+                } else if (reasonForComplaint.value === "Unfriendly staff") {
+                  sorryMessage.textContent =
+                    "I apologize on behalf of my staff. Our staff is trained to treat customers with the utmost respect and kindness. If you wish to file a complaint against a specific employee, please call us at (123)-345-6789. Thank you and have a great day!";
+                } else if (reasonForComplaint.value === "Other") {
+                  sorryMessage.textContent =
+                    "We apologize for our unfavored service provided at our restaurant. We will do our best to improve accordingly based on your complaint. Thank you an have a great day!";
+                }
+    
+                sorryDiv.appendChild(sorryMessage);
+                const backToHomePageButton = document.createElement("button");
+                backToHomePageButton.id = "backToHomePageButton";
+                backToHomePageButton.classList.add("sorryContent");
+                backToHomePageButton.textContent = "Return to Homepage";
+                sorryDiv.appendChild(backToHomePageButton);
+              }
+              
+            }
+          }
+          
+          return{contactContent}
+        });
+      };
+  
+      return{contactContent}
+})
+
+export default contactPage
