@@ -1,0 +1,36 @@
+import loyaltyProgramPage from "./loyaltyProgramModule.js"
+import oateesOatsMainPage from "./oateesOatsMainModule.js"
+import contactPage from "./contactPageModule.js"
+import menuPage from "./menuModule.js"
+
+const newOateesOatsMainPage = oateesOatsMainPage()
+const newMenuPage = menuPage()
+const newLoyaltyProgramPage = loyaltyProgramPage()
+const newContactPage = contactPage()
+
+
+newOateesOatsMainPage.oateesOatsMainContent()
+newMenuPage.menuContent()
+
+function removeItems() {
+const contentContainer = document.getElementById("contentContainer")
+const frontPageDiv = document.getElementById("frontPageDiv")
+const menuDiv = document.getElementById("menuDiv")
+const loyaltyProgramDiv = document.getElementById("loyaltyProgramDiv")
+const contactDiv = document.getElementById("contactDiv")
+
+let currentPage = "";
+
+menuDiv.style.display = "none"
+
+document.addEventListener("click", (e) => {
+  if(e.target.id === "menu"){
+    contentContainer.removeChild(frontPageDiv)
+    newMenuPage.menuContent()
+
+  }
+})
+
+
+}
+removeItems()
