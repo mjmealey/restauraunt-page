@@ -1,0 +1,511 @@
+@font-face {
+  font-family: "oatmeal";
+  src: url("oatmeal.ttf");
+}
+
+#headerContainer {
+  display: grid;
+  background-color: brown;
+  color: burlywood;
+  border-style: solid;
+  border-color: burlywood;
+  grid-template-columns: 1375px 480px 850px 400px;
+  grid-template-rows: 100px 50px 00px;
+  position: relative;
+  bottom: 2vh;
+  left: 37vh;
+  border-radius: 20px;
+  width: 106vh;
+}
+
+body {
+  background-color:burlywood;
+}
+
+h1 {
+  font-family: oatmeal;
+  font-size: 5em;
+  padding: 25px;
+  left:6.3vh;
+  top:0.5vh;
+  display: flex;
+  position: relative;
+  grid-column: 1;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+#pageContainer {
+  display: grid;
+  grid-template-columns: 200px 234px 100px 100px;
+  grid-template-rows: 100px 50px;
+}
+
+#sectionContainer {
+  display: grid;
+  grid-template-columns: 400px 400px 100px 100px;
+  grid-template-rows: 2fr 200px 300px;
+  background-color: brown;
+  width: 70vh;
+  padding: 10px;
+  grid-column: 5;
+  position:relative;
+  left:11vh;
+  justify-content: space-between;
+  border-color: burlywood;
+  color: burlywood;
+  height: 9vh;
+  font-family: oatmeal;
+  border-radius: 20px;
+  border-style: solid;
+}
+
+.button {
+  display: flex;
+  height: 5vh;
+  border-style: solid;
+  border-color: brown;
+  width: 20vh;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+  color: brown;
+  font-family: oatmeal;
+  font-size: 1.5em;
+}
+
+#frontPage {
+  grid-column: 1;
+  grid-row: 2;
+  position: relative;
+  bottom: 3vh;
+  left: 2vh;
+  padding: 30px;
+}
+
+.button:hover {
+  background-color: bisque;
+  border-color: bisque;
+}
+
+#menu {
+  grid-row: 2;
+  grid-column: 2;
+  position: relative;
+  right: 3.1vh;
+  bottom: 3vh;
+}
+
+#contact {
+  grid-row: 1;
+  grid-column: 4;
+  position: relative;
+  right: 15.8vh;
+  top: 2vh;
+}
+#contentContainer {
+  display: grid;
+  grid-template-columns: 450px 350px 600px;
+  width: 99vh;
+  border-radius: 20px;
+  position: relative;
+  top: 1vh;
+  left: 41.8vh;
+  height: 68vh;
+  grid-column: 2;
+  grid-row: 2;
+  border-style: solid;
+  border-color: burlywood;
+  grid-template-rows: 570px 100px 100px;
+  background-color: brown;
+}
+
+#frontPageDiv{
+  display:grid;
+  grid-template-columns:300px 300px 300px 300px;
+  grid-template-rows:300px 300px 300px 300px;
+}
+
+#slogan {
+  display: flex;
+  justify-content: center;
+  padding: 45px;
+  width: 60vh;
+  color: burlywood;
+  position: relative;
+  bottom:2.5vh;
+  left:16.8vh;
+  font-size: 2.5em;
+  align-items: start;
+  font-family: oatmeal;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.statement {
+  display: flex;
+  flex-direction: column;
+  font-family: oatmeal;
+  color: burlywood;
+  flex-wrap: wrap;
+  padding: 20px;
+  position: relative;
+  left:4vh;
+  bottom:8vh;
+  text-align: center;
+}
+
+#wonderful {
+  display: flex;
+  grid-row: 1/2;
+  font-size: 2.5em;
+  padding: 40px;
+  width: 86vh;
+  justify-content: center;
+  grid-column: 1/3;
+  position: relative;
+}
+
+#schedule {
+  display: flex;
+  color: burlywood;
+  grid-column: 1/5;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left:24vh;
+  grid-row: 2;
+  font-size: 2em;
+  width:55vh;
+  font-family: oatmeal;
+}
+
+#firstTime {
+  display: flex;
+  color: burlywood;
+  font-family: oatmeal;
+  grid-row: 3;
+  top: 13vh;
+  position: relative;
+  left:19vh;
+  font-size: 1.8em;
+  grid-column: 2/6;
+  width:65vh;
+}
+
+#menuDiv {
+  display: grid;
+  grid-template-columns: 40px 430px 400px;
+  grid-template-rows: 120px 210px 30px;
+}
+
+#menuHeader {
+  font-family: oatmeal;
+  grid-column: 3;
+  grid-row: 1;
+  position: relative;
+  left: 47.2vh;
+  font-size: 2.5em;
+  color: burlywood;
+  text-decoration: underline;
+}
+
+#imageOne {
+  position: relative;
+  left:3.5vh;
+  width: 27vh;
+  grid-column: 2;
+  grid-row: 2;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: burlywood;
+}
+
+#oatmealHeader {
+  color: burlywood;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: oatmeal;
+  grid-row: 3;
+  grid-column: 2;
+  position: relative;
+  left:1.5vh;
+  bottom:0.8vh;
+  font-size: 1.4em;
+}
+
+#oatmealDesc {
+  color: burlywood;
+  font-family: oatmeal;
+  display: flex;
+  grid-column: 2;
+  position: relative;
+  left:1vh;
+  bottom:1.8vh;
+  font-size: 1.2em;
+  text-align: center;
+  grid-row: 4;
+}
+
+#imageTwo {
+  grid-column: 3;
+  grid-row: 2;
+  height: 15vh;
+  width: 25vh;
+  position: relative;
+  left:38vh;
+  bottom:28.8vh;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: burlywood;
+}
+
+#oatcakeHeader {
+  grid-column: 3;
+  font-size: 1.4em;
+  position: relative;
+  left: 47.5vh;
+  bottom: 29.5vh;
+  color: burlywood;
+  font-family: oatmeal;
+}
+
+#oatcakeDesc {
+  font-family: oatmeal;
+  grid-column: 3;
+  position:relative;
+  left:34.5vh;
+  bottom:30.7vh;
+  color: burlywood;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#imageThree {
+  height: 15vh;
+  width: 23vh;
+  grid-column: 4;
+  position: relative;
+  left: 71vh;
+  bottom:57.5vh;
+  grid-row: 2;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: burlywood;
+}
+
+#oatPanCakesHeader {
+  color: burlywood;
+  display: flex;
+  font-size: 1.4em;
+  position: relative;
+  left: 67.5vh;
+  bottom: 58.3vh;
+  font-family: oatmeal;
+  grid-column: 4;
+  grid-row: 3;
+  justify-content: center;
+}
+
+#oatmealPanCakesDesc {
+  font-family: oatmeal;
+  color: burlywood;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  grid-column: 4;
+  position: relative;
+  left: 68vh;
+  width:30vh;
+  bottom:59.4vh;
+}
+
+#imageFour {
+  width: 25vh;
+  height: 18vh;
+  border-radius: 20px;
+  border-style: solid;
+  grid-column: 2;
+  position: relative;
+  bottom:55vh;
+  left: 22.3vh;
+  border-color: burlywood;
+}
+
+#oatmealCookiesHeader {
+  grid-row: 6;
+  grid-column: 3;
+  position: relative;
+  bottom:56vh;
+  left:29.6vh;
+  font-size: 1.4em;
+  color: burlywood;
+  font-family: oatmeal;
+}
+
+#oatmealCookiesDesc {
+  font-family: oatmeal;
+  display: flex;
+  font-size: 1.2em;
+  grid-row: 7;
+  grid-column: 3;
+  position: relative;
+  left:19.2vh;
+  bottom: 57vh;
+  color: burlywood;
+  justify-content: center;
+  text-align: center;
+}
+
+#imageFive {
+  height: 17.8vh;
+  width: 25vh;
+  grid-column: 4;
+  position: relative;
+  bottom:85vh;
+  left:56.5vh;
+  border-radius: 20px;
+  border-color: burlywood;
+  border-style: solid;
+  grid-row: 5;
+}
+
+#oatmealMuffinsHeader {
+  color: burlywood;
+  font-family: oatmeal;
+  grid-column: 4;
+  grid-row: 6;
+  position: relative;
+  bottom:85.8vh;
+  left:64vh;
+  font-size: 1.4em;
+}
+
+#oatmealMuffinsDesc {
+  color: burlywood;
+  font-family: oatmeal;
+  grid-row: 7;
+  font-size: 1.2em;
+  position: relative;
+  left:53.5vh;
+  width:34vh;
+  bottom: 86.8vh;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  grid-column: 4;
+}
+
+#contactsDiv{
+  display:grid;
+  justify-content:center;
+  grid-template-columns:300px 400px 400px;
+  grid-template-rows: 200px 300px 400px;
+}
+
+#contactOneContainer{
+ display:flex;
+  background-color:burlywood;
+  left:20vh;
+  color:brown;
+  font-size:1.7em;
+  font-family:oatmeal;
+  text-align:center;
+  border-color:beige;
+  border-style:solid;
+  justify-content:center;
+  width:50vh;
+  position:relative;
+  left:25.5vh;
+  top:1.5vh;
+  height:20vh;
+  border-radius:20px;
+  grid-template-columns:500px 500px 500px;
+  grid-template-rows:500px 500px 500px;
+}
+
+#contactOneName{
+  grid-row:1;
+  
+
+}
+
+#contactOneAvailability{
+position:relative;
+top:3vh;
+}
+
+
+#contactOneNumber{
+  position:relative;
+  top:5.8vh;
+}
+
+
+#contactTwoContainer{
+  display:flex;
+  background-color:burlywood;
+  border-style:solid;
+  border-color:beige;
+  justify-content:center;
+  height:20vh;
+  width:50vh;
+  border-radius:20px;
+  text-align:center;
+  color:brown;
+  position:relative;
+  right:6.3vh;
+  bottom:16.8vh;
+  grid-column:2;
+  grid-row:2;
+  font-family:oatmeal;
+  font-size:1.7em;
+}
+
+#contactTwoName{
+  position:relative;
+}
+
+#contactTwoAvailability{
+  position:relative;
+  top:3vh;
+}
+
+#contactTwoNumber{
+  position:relative;
+  top:5.8vh;
+}
+
+#contactThreeContainer{
+  display:flex;
+  justify-content:center;
+  font-family:oatmeal;
+  color:brown;
+  border-style:solid;
+  border-color:beige;
+  background-color:burlywood;
+  grid-row:3;
+  grid-column:2;
+  position:relative;
+  right:6.3vh;
+  bottom:1.5vh;
+  text-align:center;
+  border-radius:20px;
+  font-size:1.7em;
+ height:20vh;
+  width:50vh; 
+}
+
+#contactThreeAvailability{
+  position:relative;
+  top:3vh; 
+}
+
+#contactThreeNumber{
+  position:relative;
+  top:5.8vh;
+}
